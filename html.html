@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulkit Agarwal | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #000;
+            overflow: hidden; /* Keeps it a clean single-page landing */
+        }
+
+        /* The Background Image with a dark overlay for readability */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=2070'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .content {
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 2.5rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+            text-decoration: none;
+        }
+
+        /* Brand Colors on Hover */
+        .fa-instagram:hover { 
+            color: #E1306C; 
+            transform: scale(1.2);
+        }
+        
+        .fa-github:hover { 
+            color: #6e5494; 
+            transform: scale(1.2);
+        }
+
+        .fa-discord:hover { 
+            color: #5865F2; 
+            transform: scale(1.2);
+        }
+
+        /* Simple Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="content">
+            <h1>PULKIT AGARWAL</h1>
+            <p class="subtitle">Developer | Creator | Netizen</p>
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/pulkit_v3?igsh=cjVkM3Zjb200cWZq" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+                <a href="https://github.com/pulkitagarwal0777-netizen" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="#" target="_blank" title="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
